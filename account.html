@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursebook</title>
+    <style>
+    @font-face {
+        font-family: "Montserrat";
+        font-display: swap;
+        src: url("./dist/fonts/Montserrat-Regular.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Montserrat";
+        font-display: swap;
+        src: url("./dist/fonts/Montserrat-Medium.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Montserrat";
+        font-display: swap;
+        src: url("./dist/fonts/Montserrat-SemiBold.ttf") format("truetype");
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Montserrat";
+        font-display: swap;
+        src: url("./dist/fonts/Montserrat-Bold.ttf") format("truetype");
+        font-weight: 700;
+        font-style: normal;
+    }
+</style>
+    <link rel="stylesheet" href="./dist/css/global.min.css">
+    <link rel="stylesheet" href="./dist/css/account.min.css">
+
+</head>
+
+<body class="special">
+    <div class="bar">
+    <div class="container">
+        <div class="bar__inner">
+            <div class="bar__box">
+                <div class="bar__box-office">
+                    <p>Biuro obsługi klienta:</p>
+                    <a href="tel:+123456789">+48 536 918 642</a>
+                </div>
+                <div class="bar__separator"></div>
+                <ul class="bar__box-menu">
+                    <li class="bar__menu-item">
+                        <a class="bar__menu-link" href="#">O nas</a>
+                    </li>
+                    <li class="bar__menu-item">
+                        <a class="bar__menu-link" href="#">Pytania</a>
+                    </li>
+                    <li class="bar__menu-item">
+                        <a class="bar__menu-link" href="#">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="nav">
+    <div class="container">
+        <div class="nav__inner">
+            <div class="nav__left">
+                <a href="./index.html" class="nav__left-logo">
+                    CourseBook
+                </a>
+                <div class="nav__left-drop">
+                    <p class="nav__menu-link">
+                        Szkolenia
+                    </p>
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.4975 12.155L17 18.6575L23.5025 12.155L25.5 14.1667L17 22.6667L8.5 14.1667L10.4975 12.155Z"
+                            fill="#FF7700" />
+                    </svg>
+                </div>
+                <ul class="nav__left-menu">
+                    <li class="nav__menu-item">
+                        <a href="#" class="nav__menu-link">
+                            Nowości
+                        </a>
+                    </li>
+                    <li class="nav__menu-item">
+                        <a href="#" class="nav__menu-link">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="nav__menu-item">
+                        <a href="#" class="nav__menu-link">
+                            Galeria
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__right">
+                <div class="nav__account">
+                    <a href="./login.html">
+                        <svg class="nav__right-user" width="34" height="34" viewBox="0 0 34 34" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17 5.66663C18.5029 5.66663 19.9442 6.26365 21.0069 7.32635C22.0696 8.38906 22.6666 9.8304 22.6666 11.3333C22.6666 12.8362 22.0696 14.2775 21.0069 15.3402C19.9442 16.4029 18.5029 17 17 17C15.4971 17 14.0557 16.4029 12.993 15.3402C11.9303 14.2775 11.3333 12.8362 11.3333 11.3333C11.3333 9.8304 11.9303 8.38906 12.993 7.32635C14.0557 6.26365 15.4971 5.66663 17 5.66663ZM17 19.8333C23.2616 19.8333 28.3333 22.3691 28.3333 25.5V28.3333H5.66663V25.5C5.66663 22.3691 10.7383 19.8333 17 19.8333Z"
+                            fill="#12263A" />
+                    </svg>
+                    </a>
+                    <svg class="nav__right-basket" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.0625 4.25C9.78071 4.25 9.51046 4.36194 9.3112 4.5612C9.11194 4.76046 9 5.03071 9 5.3125C9 5.59429 9.11194 5.86454 9.3112 6.0638C9.51046 6.26306 9.78071 6.375 10.0625 6.375H10.5853C10.816 6.3754 11.0403 6.45088 11.2243 6.59005C11.4083 6.72921 11.542 6.92449 11.6053 7.14637L14.9755 18.9401C15.1661 19.6057 15.5682 20.1911 16.1211 20.6078C16.6739 21.0246 17.3474 21.25 18.0398 21.25H27.7489C28.386 21.2501 29.0086 21.0592 29.5363 20.7021C30.0639 20.3449 30.4724 19.8377 30.709 19.2461L33.8412 11.4134C33.97 11.0911 34.0179 10.7421 33.9806 10.3971C33.9434 10.052 33.8222 9.72127 33.6277 9.43385C33.4331 9.14643 33.1711 8.91103 32.8646 8.74824C32.5581 8.58545 32.2163 8.50022 31.8692 8.5H14.202L13.6474 6.562C13.4572 5.89639 13.0556 5.31077 12.5031 4.89366C11.9507 4.47654 11.2775 4.2506 10.5853 4.25H10.0625ZM18.5625 29.75C18.9811 29.75 19.3956 29.6676 19.7823 29.5074C20.169 29.3472 20.5204 29.1124 20.8164 28.8164C21.1124 28.5204 21.3472 28.169 21.5074 27.7823C21.6676 27.3956 21.75 26.9811 21.75 26.5625C21.75 26.1439 21.6676 25.7294 21.5074 25.3427C21.3472 24.956 21.1124 24.6046 20.8164 24.3086C20.5204 24.0126 20.169 23.7778 19.7823 23.6176C19.3956 23.4574 18.9811 23.375 18.5625 23.375C17.7171 23.375 16.9064 23.7108 16.3086 24.3086C15.7108 24.9064 15.375 25.7171 15.375 26.5625C15.375 27.4079 15.7108 28.2186 16.3086 28.8164C16.9064 29.4142 17.7171 29.75 18.5625 29.75ZM27.0625 29.75C27.4811 29.75 27.8956 29.6676 28.2823 29.5074C28.669 29.3472 29.0204 29.1124 29.3164 28.8164C29.6124 28.5204 29.8472 28.169 30.0074 27.7823C30.1676 27.3956 30.25 26.9811 30.25 26.5625C30.25 26.1439 30.1676 25.7294 30.0074 25.3427C29.8472 24.956 29.6124 24.6046 29.3164 24.3086C29.0204 24.0126 28.669 23.7778 28.2823 23.6176C27.8956 23.4574 27.4811 23.375 27.0625 23.375C26.2171 23.375 25.4064 23.7108 24.8086 24.3086C24.2108 24.9064 23.875 25.7171 23.875 26.5625C23.875 27.4079 24.2108 28.2186 24.8086 28.8164C25.4064 29.4142 26.2171 29.75 27.0625 29.75Z"
+                            fill="#12263A" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <main>
+        <section class="user-bar">
+            <div class="container">
+                <div class="user-bar__inner">
+                    <div class="user-bar__user">
+                        admin@wp.pl
+                    </div>
+                    <div class="user-bar__logout">
+                        <svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.66667 27.5C5.93334 27.5 5.30534 27.2387 4.78267 26.716C4.26 26.1933 3.99911 25.5658 4 24.8333V6.16667C4 5.43334 4.26134 4.80534 4.784 4.28267C5.30667 3.76 5.93422 3.49911 6.66667 3.5H16V6.16667H6.66667V24.8333H16V27.5H6.66667ZM21.3333 22.1667L19.5 20.2333L22.9 16.8333H12V14.1667H22.9L19.5 10.7667L21.3333 8.83334L28 15.5L21.3333 22.1667Z"
+                                fill="#12263A" />
+                        </svg>
+                        Wyloguj się
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="control">
+            <div class="container">
+                <div class="control__inner">
+                    <a href="#" class="control__box control__box--active">
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7 24.5H10.5C11.4625 24.5 12.25 23.7125 12.25 22.75V19.25C12.25 18.2875 11.4625 17.5 10.5 17.5H7C6.0375 17.5 5.25 18.2875 5.25 19.25V22.75C5.25 23.7125 6.0375 24.5 7 24.5ZM7 33.25H10.5C11.4625 33.25 12.25 32.4625 12.25 31.5V28C12.25 27.0375 11.4625 26.25 10.5 26.25H7C6.0375 26.25 5.25 27.0375 5.25 28V31.5C5.25 32.4625 6.0375 33.25 7 33.25ZM7 15.75H10.5C11.4625 15.75 12.25 14.9625 12.25 14V10.5C12.25 9.5375 11.4625 8.75 10.5 8.75H7C6.0375 8.75 5.25 9.5375 5.25 10.5V14C5.25 14.9625 6.0375 15.75 7 15.75ZM15.75 24.5H35C35.9625 24.5 36.75 23.7125 36.75 22.75V19.25C36.75 18.2875 35.9625 17.5 35 17.5H15.75C14.7875 17.5 14 18.2875 14 19.25V22.75C14 23.7125 14.7875 24.5 15.75 24.5ZM15.75 33.25H35C35.9625 33.25 36.75 32.4625 36.75 31.5V28C36.75 27.0375 35.9625 26.25 35 26.25H15.75C14.7875 26.25 14 27.0375 14 28V31.5C14 32.4625 14.7875 33.25 15.75 33.25ZM14 10.5V14C14 14.9625 14.7875 15.75 15.75 15.75H35C35.9625 15.75 36.75 14.9625 36.75 14V10.5C36.75 9.5375 35.9625 8.75 35 8.75H15.75C14.7875 8.75 14 9.5375 14 10.5Z"
+                                fill="#FF7700" />
+                        </svg>
+                        Twoje kursy
+                    </a>
+                    <a href="#" class="control__box">
+                        <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M25.02 19.4137C22.78 18.267 19.8733 17.3337 16.5 17.3337C13.1267 17.3337 10.22 18.267 7.98001 19.4137C7.32942 19.7488 6.78441 20.2576 6.40547 20.8836C6.02654 21.5097 5.8285 22.2285 5.83334 22.9603V26.667H27.1667V22.9603C27.1667 21.467 26.3533 20.0937 25.02 19.4137ZM13.8333 16.0003H19.1667C21.38 16.0003 23.1667 14.2137 23.1667 12.0003C23.1667 11.027 22.8067 10.1337 22.22 9.44033C22.3933 9.00033 22.5 8.50699 22.5 8.00033C22.4987 7.20835 22.2623 6.43459 21.8208 5.77709C21.3793 5.11959 20.7526 4.60794 20.02 4.30699C19.1667 3.30699 17.9133 2.66699 16.5 2.66699C15.0867 2.66699 13.8333 3.30699 12.98 4.30699C12.2474 4.60794 11.6207 5.11959 11.1792 5.77709C10.7377 6.43459 10.5013 7.20835 10.5 8.00033C10.5 8.50699 10.6067 9.00033 10.78 9.44033C10.1933 10.1337 9.83334 11.027 9.83334 12.0003C9.83334 14.2137 11.62 16.0003 13.8333 16.0003Z"
+                                fill="#FF7700" />
+                        </svg>
+                        Twoi prowadzący
+                    </a>
+                    <a href="#" class="control__box">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 24H20V21.3333H4V24ZM4 8V10.6667H28V8H4ZM4 17.3333H28V14.6667H4V17.3333Z"
+                                fill="#FF7700" />
+                        </svg>
+                        Twoje wipsy
+                    </a>
+                    <div class="control__box">
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24.5 17.5H5.25V21H24.5V17.5ZM24.5 10.5H5.25V14H24.5V10.5ZM31.5 24.5V17.5H28V24.5H21V28H28V35H31.5V28H38.5V24.5H31.5ZM5.25 28H17.5V24.5H5.25V28Z"
+                                fill="#FF7700" />
+                        </svg>
+                        Dodaj kurs
+                    </div>
+                    <div class="control__box">
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M26.9326 25.48C23.9926 23.975 20.1776 22.75 15.7501 22.75C11.3226 22.75 7.50761 23.975 4.56761 25.48C3.71372 25.9198 2.99839 26.5876 2.50104 27.4093C2.00369 28.2311 1.74376 29.1745 1.75011 30.135V35H29.7501V30.135C29.7501 28.175 28.6826 26.3725 26.9326 25.48ZM15.7501 21C19.6176 21 22.7501 17.8675 22.7501 14C22.7501 10.1325 19.6176 7 15.7501 7C11.8826 7 8.75011 10.1325 8.75011 14C8.75011 17.8675 11.8826 21 15.7501 21ZM35.0001 15.75V12.25C35.0001 11.2875 34.2126 10.5 33.2501 10.5C32.2876 10.5 31.5001 11.2875 31.5001 12.25V15.75H28.0001C27.0376 15.75 26.2501 16.5375 26.2501 17.5C26.2501 18.4625 27.0376 19.25 28.0001 19.25H31.5001V22.75C31.5001 23.7125 32.2876 24.5 33.2501 24.5C34.2126 24.5 35.0001 23.7125 35.0001 22.75V19.25H38.5001C39.4626 19.25 40.2501 18.4625 40.2501 17.5C40.2501 16.5375 39.4626 15.75 38.5001 15.75H35.0001Z"
+                                fill="#FF7700" />
+                        </svg>
+                        Dodaj prowadzącego
+                    </div>
+                    <div class="control__box">
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24.5 17.5H5.25V21H24.5V17.5ZM24.5 10.5H5.25V14H24.5V10.5ZM31.5 24.5V17.5H28V24.5H21V28H28V35H31.5V28H38.5V24.5H31.5ZM5.25 28H17.5V24.5H5.25V28Z"
+                                fill="#FF7700" />
+                        </svg>
+                        Dodaj wpis
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="list">
+            <div class="container">
+                <div class="list__inner">
+                    <div class="list__item">
+                        <div class="list__item-image">
+                            <img loading="lazy" width="200" height="100" src="../dist/img/kursy/card_1.jpg" alt="">
+                        </div>
+                        <div class="list__item-box">
+                            <p class="list__box-title">Nazwa</p>
+                            <p class="list__box-name">Kurs kuchni Włoskiej</p>
+                        </div>
+                        <div class="list__item-box">
+                            <p class="list__box-title">Prowadzący</p>
+                            <p class="list__box-name">Artur Kowalski</p>
+                        </div>
+                        <div class="list__item-box">
+                            <p class="list__box-title">Cena</p>
+                            <p class="list__box-name">299zł</p>
+                        </div>
+                        <div class="list__item-box">
+                            <p class="list__box-title">Ilość miejsc</p>
+                            <p class="list__box-name">2</p>
+                        </div>
+                        <div class="list__item-box">
+                            <p class="list__box-title">Data kursu</p>
+                            <p class="list__box-name">24.07.2023</p>
+                        </div>
+                        <a class="list__item-edit" href="#">Edytuj</a>
+                    </div>
+                    <!--  -->
+                    <div class="list__item">
+                        <div class="list__item-image">
+                            <img loading="lazy" width="200" height="100" src="../dist/img/kursy/card_1.jpg" alt=""> 
+                        </div>
+                        <div class="list__item-box">
+                            <p class="list__box-title">Nazwa</p>
+                            <p class="list__box-name">Kurs kuchni Polskiej</p>
+                        </div>
+                        <div class="list__item-box">
+                            <p class="list__box-title">Prowadzący</p>
+                            <p class="list__box-name">Marek Tylecki</p>
+                        </div>
+                        <div class="list__item-box">
+                            <p class="list__box-title">Cena</p>
+                            <p class="list__box-name">499zł</p>
+                        </div>
+                        <div class="list__item-box">
+                            <p class="list__box-title">Ilość miejsc</p>
+                            <p class="list__box-name">10</p>
+                        </div>
+                        <div class="list__item-box">
+                            <p class="list__box-title">Data kursu</p>
+                            <p class="list__box-name">14.02.2023</p>
+                        </div>
+                        <a class="list__item-edit" href="#">Edytuj</a>
+                    </div>
+                    <!--  -->
+                    <div class="list__item">
+                        <div class="list__item-image">
+                            <img loading="lazy" width="200" height="100" src="../dist/img/kursy/card_1.jpg" alt="">
+                        </div>
+                        <div class="list__item-box">
+                            <p class="list__box-title">Nazwa</p>
+                            <p class="list__box-name">Kurs kuchni Włoskiej</p>
+                        </div>
+                        <div class="list__item-box">
+                            <p class="list__box-title">Prowadzący</p>
+                            <p class="list__box-name">Artur Kowalski</p>
+                        </div>
+                        <div class="list__item-box">
+                            <p class="list__box-title">Cena</p>
+                            <p class="list__box-name">299zł</p>
+                        </div>
+                        <div class="list__item-box">
+                            <p class="list__box-title">Ilość miejsc</p>
+                            <p class="list__box-name">2</p>
+                        </div>
+                        <div class="list__item-box">
+                            <p class="list__box-title">Data kursu</p>
+                            <p class="list__box-name">24.07.2023</p>
+                        </div>
+                        <a class="list__item-edit" href="#">Edytuj</a>
+                    </div>
+                    <!--  -->
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="./dist/js/main.min.js"></script>
+</body>
+
+</html>

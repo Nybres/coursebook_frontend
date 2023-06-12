@@ -1,0 +1,130 @@
+@use "./utilities/index" as *;
+
+.user-bar {
+  position: relative;
+  margin-block: 80px;
+
+  &__inner {
+    background-color: var(--white-color);
+    padding: 34px 32px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__user {
+    @include heading4();
+    color: var(--blue-color);
+    font-weight: 600;
+  }
+
+  &__logout {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    @include heading5();
+    color: var(--blue-color);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+}
+
+.control {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    background-color: var(--white-color);
+    border-radius: 4px;
+    @include heading5();
+    color: var(--blue-color);
+    font-weight: 700;
+    padding: 40px;
+    border: 2px solid transparent;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--primary-color);
+      color: var(--white-color);
+    }
+
+    &--active {
+      border: 2px solid var(--primary-color);
+    }
+  }
+}
+
+.list {
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 80px;
+
+  &__inner {
+    background-color: var(--white-color);
+    padding: 80px 32px;
+    border-radius: 4px;
+  }
+
+  &__item {
+    display: grid;
+    // grid-template-columns: 200px repeat(auto-fit, minmax(230px, 200px));
+    grid-template-columns: 200px 250px 200px 100px 130px 130px auto;
+    gap: 24px;
+
+    padding: 38px 0;
+    border-bottom: 1px solid #e9e9e9;
+
+    &-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-right: 1px solid #e9e9e9;
+
+      &:last-of-type {
+        border-right: unset;
+      }
+    }
+
+    &-image {
+      img {
+        border-radius: 20px;
+      }
+    }
+
+    &-edit {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      color: var(--primary-color);
+      @include heading5();
+      font-weight: 700;
+    }
+  }
+
+  &__box {
+    &-title {
+      @include bodyXl();
+      font-weight: 400;
+      color: var(--black-color);
+    }
+    &-name {
+      @include heading5();
+      font-weight: 600;
+      color: var(--blue-color);
+    }
+  }
+}

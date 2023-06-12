@@ -1,0 +1,162 @@
+:root {
+  --primary-color: #a4243b;
+  --secondary-color: #ff9a62;
+  --accent-color: #fafcff;
+  --blue-color: #12263a;
+  --black-color: #1d1d1d;
+  --white-color: #ffff;
+  --grey-text: #4c4c4c;
+  --light-grey-color: #fafafa;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: unset;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.special {
+  background-color: var(--light-grey-color);
+}
+
+.container {
+  max-width: 1488px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.oneside-container {
+  max-width: calc(1464px + calc(100% - 1440px) / 2);
+  width: 100%;
+  margin-left: auto;
+  padding-left: 24px;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  display: inline-block;
+  padding: 15px 80px 15px 14px;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 26px;
+  cursor: pointer;
+
+  &__arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    border-left: 1px solid #d9d9d9;
+  }
+
+  &--primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #bc344c;
+    }
+  }
+
+  &--secondary {
+    color: var(--black-color);
+    background-color: var(--white-color);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--white-color);
+      background-color: var(--primary-color);
+    }
+  }
+}
+
+input:focus {
+  outline: none;
+}
+
+.form {
+  &__group {
+    &-input {
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--grey-text);
+      padding: 14px 24px;
+      border: 1px solid var(--secondary-color);
+      border-radius: 4px;
+      transition: border 0.3s ease-in-out;
+
+      &:focus {
+        border: 1px solid var(--primary-color);
+      }
+    }
+  }
+
+  &__row {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 18px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

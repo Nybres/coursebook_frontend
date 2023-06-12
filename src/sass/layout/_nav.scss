@@ -1,0 +1,133 @@
+@use "./utilities/index" as *;
+
+.bar {
+  color: var(--black-color);
+  background-color: var(--light-grey-color);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 56px;
+  }
+
+  &__separator {
+    width: 1px;
+    height: 34px;
+    background-color: #e9e9e9;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+
+    &-office {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      p {
+        @include bodyS();
+      }
+      a {
+        @include bodyM();
+        font-weight: 600;
+        transition: color 0.3s ease-in-out;
+        &:hover {
+          color: var(--primary-color);
+        }
+      }
+    }
+    &-menu {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+  }
+
+  &__menu {
+    &-link {
+      @include bodyS();
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+}
+
+.nav {
+  color: var(--black-color);
+  background-color: var(--white-color);
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    &-logo {
+      padding-right: 42px;
+      font-size: 40px;
+      line-height: 30px;
+      font-weight: 700;
+      color: var(--blue-color);
+    }
+
+    &-drop {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 28px 44px;
+      cursor: pointer;
+      border-left: 2px solid #e9e9e9;
+      border-right: 2px solid #e9e9e9;
+    }
+
+    &-menu {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      padding-left: 42px;
+    }
+  }
+
+  &__right {
+  }
+
+  &__account {
+    display: flex;
+    gap: 12px;
+    padding: 28px 0 28px 42px;
+    border-left: 2px solid #e9e9e9;
+
+    svg {
+      cursor: pointer;
+    }
+    svg path {
+      transition: fill 0.3s ease-in-out;
+
+      &:hover {
+        fill: var(--primary-color);
+      }
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    &-link {
+      @include bodyM();
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+}
