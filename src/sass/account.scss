@@ -75,8 +75,38 @@
 
   &__inner {
     background-color: var(--white-color);
-    padding: 80px 32px;
+    padding: 48px 32px;
     border-radius: 4px;
+  }
+
+  &__panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    &-counter {
+      @include bodyM();
+      font-weight: 400;
+      padding: 8px 24px;
+      background-color: var(--secondary-color);
+      border-radius: 20px;
+      color: var(--white-color);
+    }
+
+    &-add {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      @include heading4();
+      font-weight: 700;
+      color: var(--blue-color);
+      cursor: pointer;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
   }
 
   &__item {
@@ -126,5 +156,59 @@
       font-weight: 600;
       color: var(--blue-color);
     }
+  }
+}
+
+.drawer {
+  position: fixed;
+  overflow-y: auto;
+  background-color: var(--white-color);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 900px;
+  padding: 48px;
+  z-index: 99;
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+  &--active {
+    transform: translateX(0);
+  }
+
+  &__container {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__back {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    @include heading5();
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    gap: 128px;
+    margin-bottom: 48px;
+    @include heading2();
+    font-weight: 700;
+    color: var(--blue-color);
+  }
+
+  input,
+  select,
+  textarea,
+  .form__group {
+    width: 100%;
   }
 }

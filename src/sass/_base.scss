@@ -1,6 +1,6 @@
 :root {
   --primary-color: #a4243b;
-  --secondary-color: #ff9a62;
+  --secondary-color: #ff7700;
   --accent-color: #fafcff;
   --blue-color: #12263a;
   --black-color: #1d1d1d;
@@ -159,4 +159,35 @@ input:focus {
       margin-bottom: 0;
     }
   }
+
+  &__submit {
+    &-box {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  background-color: rgb(29 29 29 / 50%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+
+  &--active {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
 }
