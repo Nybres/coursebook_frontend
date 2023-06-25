@@ -8,22 +8,30 @@ addEventListener("DOMContentLoaded", event => {
     });
   }
 
-  const accountAddBtn = document.querySelector(".js-account-add");
-  if (accountAddBtn) {
+  const backdropActivate = overlay => {
+    overlay.classList.add("overlay--active");
+    document.body.classList.add("no-scroll");
+  };
+
+  const backdropDeActivate = overlay => {
+    overlay.classList.remove("overlay--active");
+    document.body.classList.remove("no-scroll");
+  };
+
+  const drawer = document.querySelector(".drawer");
+  if (drawer) {
     const overlay = document.querySelector(".overlay");
-    const drawer = document.querySelector(".drawer");
+    const accountAddBtn = document.querySelector(".jsAccountAdd");
     const drawerBackBtn = drawer.querySelector(".drawer__back");
 
     accountAddBtn.addEventListener("click", () => {
       drawer.classList.add("drawer--active");
-      overlay.classList.add("overlay--active");
-      document.body.classList.add("no-scroll");
+      backdropActivate(overlay);
     });
 
     drawerBackBtn.addEventListener("click", () => {
       drawer.classList.remove("drawer--active");
-      overlay.classList.remove("overlay--active");
-      document.body.classList.remove("no-scroll");
+      backdropDeActivate(overlay);
     });
   }
 });

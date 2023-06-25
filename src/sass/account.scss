@@ -142,6 +142,13 @@
       color: var(--primary-color);
       @include heading5();
       font-weight: 700;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    &--instructor {
+      grid-template-columns: 200px 250px 200px auto;
     }
   }
 
@@ -200,7 +207,7 @@
     align-items: center;
     gap: 128px;
     margin-bottom: 48px;
-    @include heading2();
+    @include heading4();
     font-weight: 700;
     color: var(--blue-color);
   }
