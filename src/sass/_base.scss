@@ -147,6 +147,26 @@ input:focus {
         border: 1px solid var(--primary-color);
       }
     }
+
+    &-textarea {
+      font-family: inherit;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--grey-text);
+      padding: 14px 24px;
+      border: 1px solid var(--secondary-color);
+      border-radius: 4px;
+      transition: border 0.3s ease-in-out;
+      max-width: 100%;
+      min-width: 100%;
+      min-height: 200px;
+      max-height: 400px;
+      outline: 0;
+
+      &:focus {
+        border: 1px solid var(--primary-color);
+      }
+    }
   }
 
   &__row {

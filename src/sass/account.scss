@@ -77,13 +77,16 @@
     background-color: var(--white-color);
     padding: 48px 32px;
     border-radius: 4px;
+    // display: grid;
+    // grid-template-columns: repeat(4, 1fr)
   }
 
   &__panel {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 36px;
+    padding: 0 32px;
     &-counter {
       @include bodyM();
       font-weight: 400;
@@ -109,10 +112,25 @@
     }
   }
 
+  &__empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 0;
+
+    &-name {
+      @include heading4();
+      font-weight: 600;
+      color: var(--blue-color);
+    }
+  }
+
   &__item {
     display: grid;
     // grid-template-columns: 200px repeat(auto-fit, minmax(230px, 200px));
-    grid-template-columns: 200px 250px 200px 100px 130px 130px auto;
+    grid-template-columns: 200px 250px 200px 130px 130px 130px auto;
     gap: 24px;
 
     padding: 38px 0;
@@ -121,7 +139,6 @@
     &-box {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       border-right: 1px solid #e9e9e9;
 
       &:last-of-type {
@@ -135,20 +152,27 @@
       }
     }
 
-    &-edit {
+    &-controls {
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      color: var(--primary-color);
-      @include heading5();
-      font-weight: 700;
-      background: none;
-      border: none;
-      cursor: pointer;
+      gap: 12px;
+    }
+
+    &-edit {
+      svg path {
+        transition: fill 0.3s ease-in-out;
+      }
+      &:hover {
+        svg path {
+          fill: var(--secondary-color);
+        }
+      }
     }
 
     &--instructor {
       grid-template-columns: 200px 250px 200px auto;
+      align-items: center;
     }
   }
 
@@ -178,6 +202,22 @@
   z-index: 99;
   transform: translateX(100%);
   transition: transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) var(--light-grey-color);
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--light-grey-color);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    border: 3px solid var(--light-grey-color);
+  }
 
   &--active {
     transform: translateX(0);

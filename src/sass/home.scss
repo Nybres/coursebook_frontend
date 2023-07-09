@@ -48,6 +48,9 @@
       @include heading3();
       color: var(--blue-color);
       font-weight: 700;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     &-more {
       @include bodyL();
