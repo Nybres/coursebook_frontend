@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursebook</title>
+    <style>
+    @font-face {
+        font-family: "Montserrat";
+        font-display: swap;
+        src: url("./dist/fonts/Montserrat-Regular.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Montserrat";
+        font-display: swap;
+        src: url("./dist/fonts/Montserrat-Medium.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Montserrat";
+        font-display: swap;
+        src: url("./dist/fonts/Montserrat-SemiBold.ttf") format("truetype");
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Montserrat";
+        font-display: swap;
+        src: url("./dist/fonts/Montserrat-Bold.ttf") format("truetype");
+        font-weight: 700;
+        font-style: normal;
+    }
+</style>
+    <link rel="stylesheet" href="./dist/css/global.min.css">
+    <link rel="stylesheet" href="./dist/css/login.min.css">
+
+</head>
+
+<body>
+    <div class="bar">
+    <div class="container">
+        <div class="bar__inner">
+            <div class="bar__box">
+                <div class="bar__box-office">
+                    <p>Biuro obsługi klienta:</p>
+                    <a href="tel:+123456789">+48 536 918 642</a>
+                </div>
+                <div class="bar__separator"></div>
+                <ul class="bar__box-menu">
+                    <li class="bar__menu-item">
+                        <a class="bar__menu-link" href="#">O nas</a>
+                    </li>
+                    <li class="bar__menu-item">
+                        <a class="bar__menu-link" href="#">Pytania</a>
+                    </li>
+                    <li class="bar__menu-item">
+                        <a class="bar__menu-link" href="#">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="nav">
+    <div class="container">
+        <div class="nav__inner">
+            <div class="nav__left">
+                <a href="./index.html" class="nav__left-logo">
+                    CourseBook
+                </a>
+                <div class="nav__left-drop">
+                    <p class="nav__menu-link">
+                        Szkolenia
+                    </p>
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.4975 12.155L17 18.6575L23.5025 12.155L25.5 14.1667L17 22.6667L8.5 14.1667L10.4975 12.155Z"
+                            fill="#FF7700" />
+                    </svg>
+                </div>
+                <ul class="nav__left-menu">
+                    <li class="nav__menu-item">
+                        <a href="#" class="nav__menu-link">
+                            Nowości
+                        </a>
+                    </li>
+                    <li class="nav__menu-item">
+                        <a href="#" class="nav__menu-link">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="nav__menu-item">
+                        <a href="#" class="nav__menu-link">
+                            Galeria
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__right">
+                <div class="nav__account">
+                    <a href="./login.html">
+                        <svg class="nav__right-user" width="34" height="34" viewBox="0 0 34 34" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17 5.66663C18.5029 5.66663 19.9442 6.26365 21.0069 7.32635C22.0696 8.38906 22.6666 9.8304 22.6666 11.3333C22.6666 12.8362 22.0696 14.2775 21.0069 15.3402C19.9442 16.4029 18.5029 17 17 17C15.4971 17 14.0557 16.4029 12.993 15.3402C11.9303 14.2775 11.3333 12.8362 11.3333 11.3333C11.3333 9.8304 11.9303 8.38906 12.993 7.32635C14.0557 6.26365 15.4971 5.66663 17 5.66663ZM17 19.8333C23.2616 19.8333 28.3333 22.3691 28.3333 25.5V28.3333H5.66663V25.5C5.66663 22.3691 10.7383 19.8333 17 19.8333Z"
+                            fill="#12263A" />
+                    </svg>
+                    </a>
+                    <svg class="nav__right-basket" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.0625 4.25C9.78071 4.25 9.51046 4.36194 9.3112 4.5612C9.11194 4.76046 9 5.03071 9 5.3125C9 5.59429 9.11194 5.86454 9.3112 6.0638C9.51046 6.26306 9.78071 6.375 10.0625 6.375H10.5853C10.816 6.3754 11.0403 6.45088 11.2243 6.59005C11.4083 6.72921 11.542 6.92449 11.6053 7.14637L14.9755 18.9401C15.1661 19.6057 15.5682 20.1911 16.1211 20.6078C16.6739 21.0246 17.3474 21.25 18.0398 21.25H27.7489C28.386 21.2501 29.0086 21.0592 29.5363 20.7021C30.0639 20.3449 30.4724 19.8377 30.709 19.2461L33.8412 11.4134C33.97 11.0911 34.0179 10.7421 33.9806 10.3971C33.9434 10.052 33.8222 9.72127 33.6277 9.43385C33.4331 9.14643 33.1711 8.91103 32.8646 8.74824C32.5581 8.58545 32.2163 8.50022 31.8692 8.5H14.202L13.6474 6.562C13.4572 5.89639 13.0556 5.31077 12.5031 4.89366C11.9507 4.47654 11.2775 4.2506 10.5853 4.25H10.0625ZM18.5625 29.75C18.9811 29.75 19.3956 29.6676 19.7823 29.5074C20.169 29.3472 20.5204 29.1124 20.8164 28.8164C21.1124 28.5204 21.3472 28.169 21.5074 27.7823C21.6676 27.3956 21.75 26.9811 21.75 26.5625C21.75 26.1439 21.6676 25.7294 21.5074 25.3427C21.3472 24.956 21.1124 24.6046 20.8164 24.3086C20.5204 24.0126 20.169 23.7778 19.7823 23.6176C19.3956 23.4574 18.9811 23.375 18.5625 23.375C17.7171 23.375 16.9064 23.7108 16.3086 24.3086C15.7108 24.9064 15.375 25.7171 15.375 26.5625C15.375 27.4079 15.7108 28.2186 16.3086 28.8164C16.9064 29.4142 17.7171 29.75 18.5625 29.75ZM27.0625 29.75C27.4811 29.75 27.8956 29.6676 28.2823 29.5074C28.669 29.3472 29.0204 29.1124 29.3164 28.8164C29.6124 28.5204 29.8472 28.169 30.0074 27.7823C30.1676 27.3956 30.25 26.9811 30.25 26.5625C30.25 26.1439 30.1676 25.7294 30.0074 25.3427C29.8472 24.956 29.6124 24.6046 29.3164 24.3086C29.0204 24.0126 28.669 23.7778 28.2823 23.6176C27.8956 23.4574 27.4811 23.375 27.0625 23.375C26.2171 23.375 25.4064 23.7108 24.8086 24.3086C24.2108 24.9064 23.875 25.7171 23.875 26.5625C23.875 27.4079 24.2108 28.2186 24.8086 28.8164C25.4064 29.4142 26.2171 29.75 27.0625 29.75Z"
+                            fill="#12263A" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <main>
+        <div class="container">
+            <ol class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="/">Coursebook</a>
+                </li>
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.05 13.5L6 12.45L9.45 9L6 5.55L7.05 4.5L11.55 9L7.05 13.5Z" fill="#FF9A62" />
+                </svg>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Wielkopolska</a>
+                </li>
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.05 13.5L6 12.45L9.45 9L6 5.55L7.05 4.5L11.55 9L7.05 13.5Z" fill="#FF9A62" />
+                </svg>
+                <li class="breadcrumbs__item">
+                    <span>Kurs robienia Sushi</span>
+                </li>
+            </ol>
+            <section class="course">
+                <div class="course__left">
+                    <div class="course__head">
+                        <h1 class="course__head-title">Kurs Robienia Sushi</h1>
+                        <p class="course__head-short">
+                            Zapraszamy na nasz fascynujący kurs robienia sushi, który zabierze Cię w podróż do
+                            tajemniczej i eleganckiej kuchni japońskiej.
+                        </p>
+                    </div>
+                    <div class="course__gallery">
+                        <picture>
+                            <img width="325" height="240" src="/dist/img/kursy/kurs_small_1.jpg" alt="">
+                        </picture>
+                        <picture>
+                            <img width="325" height="240" src="/dist/img/kursy/kurs_small_1.jpg" alt="">
+                        </picture>
+                        <picture>
+                            <img width="484" height="506" src="/dist/img/kursy/kurs_big_1.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="course__nav">
+                        <div class="chips">Opis szkolenia</div>
+                        <div class="chips">Dla kogo</div>
+                        <div class="chips">Korzyści</div>
+                        <div class="chips">Galeria</div>
+                        <div class="chips">Prowadzący</div>
+                    </div>
+                </div>
+                <div class="course__right">
+                    <div class="course__box">
+                        <p class="course__box-title">Zapisz się na szkolenie</p>
+                        <p class="course__box-province">Zapisz się na szkolenie</p>
+                        <div class="course__detials">
+                            <div class="course__details-detail">
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="material-symbols:location-on">
+                                        <path id="Vector"
+                                            d="M18 18C18.825 18 19.5315 17.706 20.1195 17.118C20.7075 16.53 21.001 15.824 21 15C21 14.175 20.706 13.4685 20.118 12.8805C19.53 12.2925 18.824 11.999 18 12C17.175 12 16.4685 12.294 15.8805 12.882C15.2925 13.47 14.999 14.176 15 15C15 15.825 15.294 16.5315 15.882 17.1195C16.47 17.7075 17.176 18.001 18 18ZM18 33C13.975 29.575 10.969 26.394 8.982 23.457C6.995 20.52 6.001 17.801 6 15.3C6 11.55 7.2065 8.5625 9.6195 6.3375C12.0325 4.1125 14.826 3 18 3C21.175 3 23.969 4.1125 26.382 6.3375C28.795 8.5625 30.001 11.55 30 15.3C30 17.8 29.006 20.519 27.018 23.457C25.03 26.395 22.024 29.576 18 33Z"
+                                            fill="#FF7700" />
+                                    </g>
+                                </svg>
+                                <div class="course__details-text">
+                                    Lokalizacja:
+                                    <span>Poznań</span>
+                                </div>
+                            </div>
+
+                            <div class="course__details-detail">
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="material-symbols:nest-clock-farsight-analog">
+                                        <path id="Vector"
+                                            d="M21.825 24.825L23.925 22.6875L19.5 18.2625V12H16.5V19.5L21.825 24.825ZM16.5 9H19.5V6H16.5V9ZM27 19.5H30V16.5H27V19.5ZM16.5 30H19.5V27H16.5V30ZM6 19.5H9V16.5H6V19.5ZM18 33C15.925 33 13.975 32.606 12.15 31.818C10.325 31.03 8.7375 29.9615 7.3875 28.6125C6.0375 27.2625 4.969 25.675 4.182 23.85C3.395 22.025 3.001 20.075 3 18C3 15.925 3.394 13.975 4.182 12.15C4.97 10.325 6.0385 8.7375 7.3875 7.3875C8.7375 6.0375 10.325 4.969 12.15 4.182C13.975 3.395 15.925 3.001 18 3C20.075 3 22.025 3.394 23.85 4.182C25.675 4.97 27.2625 6.0385 28.6125 7.3875C29.9625 8.7375 31.0315 10.325 31.8195 12.15C32.6075 13.975 33.001 15.925 33 18C33 20.075 32.606 22.025 31.818 23.85C31.03 25.675 29.9615 27.2625 28.6125 28.6125C27.2625 29.9625 25.675 31.0315 23.85 31.8195C22.025 32.6075 20.075 33.001 18 33Z"
+                                            fill="#FF7700" />
+                                    </g>
+                                </svg>
+                                <div class="course__details-text">
+                                    Godzina:
+                                    <span>17:30</span>
+                                </div>
+                            </div>
+
+                            <div class="course__details-detail">
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="material-symbols:calendar-month">
+                                        <path id="Vector"
+                                            d="M18 21C17.575 21 17.2185 20.856 16.9305 20.568C16.6425 20.28 16.499 19.924 16.5 19.5C16.5 19.075 16.644 18.7185 16.932 18.4305C17.22 18.1425 17.576 17.999 18 18C18.425 18 18.7815 18.144 19.0695 18.432C19.3575 18.72 19.501 19.076 19.5 19.5C19.5 19.925 19.356 20.2815 19.068 20.5695C18.78 20.8575 18.424 21.001 18 21ZM12 21C11.575 21 11.2185 20.856 10.9305 20.568C10.6425 20.28 10.499 19.924 10.5 19.5C10.5 19.075 10.644 18.7185 10.932 18.4305C11.22 18.1425 11.576 17.999 12 18C12.425 18 12.7815 18.144 13.0695 18.432C13.3575 18.72 13.501 19.076 13.5 19.5C13.5 19.925 13.356 20.2815 13.068 20.5695C12.78 20.8575 12.424 21.001 12 21ZM24 21C23.575 21 23.2185 20.856 22.9305 20.568C22.6425 20.28 22.499 19.924 22.5 19.5C22.5 19.075 22.644 18.7185 22.932 18.4305C23.22 18.1425 23.576 17.999 24 18C24.425 18 24.7815 18.144 25.0695 18.432C25.3575 18.72 25.501 19.076 25.5 19.5C25.5 19.925 25.356 20.2815 25.068 20.5695C24.78 20.8575 24.424 21.001 24 21ZM18 27C17.575 27 17.2185 26.856 16.9305 26.568C16.6425 26.28 16.499 25.924 16.5 25.5C16.5 25.075 16.644 24.7185 16.932 24.4305C17.22 24.1425 17.576 23.999 18 24C18.425 24 18.7815 24.144 19.0695 24.432C19.3575 24.72 19.501 25.076 19.5 25.5C19.5 25.925 19.356 26.2815 19.068 26.5695C18.78 26.8575 18.424 27.001 18 27ZM12 27C11.575 27 11.2185 26.856 10.9305 26.568C10.6425 26.28 10.499 25.924 10.5 25.5C10.5 25.075 10.644 24.7185 10.932 24.4305C11.22 24.1425 11.576 23.999 12 24C12.425 24 12.7815 24.144 13.0695 24.432C13.3575 24.72 13.501 25.076 13.5 25.5C13.5 25.925 13.356 26.2815 13.068 26.5695C12.78 26.8575 12.424 27.001 12 27ZM24 27C23.575 27 23.2185 26.856 22.9305 26.568C22.6425 26.28 22.499 25.924 22.5 25.5C22.5 25.075 22.644 24.7185 22.932 24.4305C23.22 24.1425 23.576 23.999 24 24C24.425 24 24.7815 24.144 25.0695 24.432C25.3575 24.72 25.501 25.076 25.5 25.5C25.5 25.925 25.356 26.2815 25.068 26.5695C24.78 26.8575 24.424 27.001 24 27ZM7.5 33C6.675 33 5.9685 32.706 5.3805 32.118C4.7925 31.53 4.499 30.824 4.5 30V9C4.5 8.175 4.794 7.4685 5.382 6.8805C5.97 6.2925 6.676 5.999 7.5 6H9V3H12V6H24V3H27V6H28.5C29.325 6 30.0315 6.294 30.6195 6.882C31.2075 7.47 31.501 8.176 31.5 9V30C31.5 30.825 31.206 31.5315 30.618 32.1195C30.03 32.7075 29.324 33.001 28.5 33H7.5ZM7.5 30H28.5V15H7.5V30Z"
+                                            fill="#FF7700" />
+                                    </g>
+                                </svg>
+                                <div class="course__details-text">
+                                    Data:
+                                    <span>28.06.2023</span>
+                                </div>
+                            </div>
+                            <div class="course__details-detail">
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="material-symbols:person">
+                                        <path id="Vector"
+                                            d="M18 18C16.35 18 14.9375 17.4125 13.7625 16.2375C12.5875 15.0625 12 13.65 12 12C12 10.35 12.5875 8.9375 13.7625 7.7625C14.9375 6.5875 16.35 6 18 6C19.65 6 21.0625 6.5875 22.2375 7.7625C23.4125 8.9375 24 10.35 24 12C24 13.65 23.4125 15.0625 22.2375 16.2375C21.0625 17.4125 19.65 18 18 18ZM6 30V25.8C6 24.95 6.219 24.1685 6.657 23.4555C7.095 22.7425 7.676 22.199 8.4 21.825C9.95 21.05 11.525 20.4685 13.125 20.0805C14.725 19.6925 16.35 19.499 18 19.5C19.65 19.5 21.275 19.694 22.875 20.082C24.475 20.47 26.05 21.051 27.6 21.825C28.325 22.2 28.9065 22.744 29.3445 23.457C29.7825 24.17 30.001 24.951 30 25.8V30H6Z"
+                                            fill="#FF7700" />
+                                    </g>
+                                </svg>
+                                <div class="course__details-text">
+                                    Prowadzący::
+                                    <span>Wiktor Marecki</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course__availability">
+                            <p class="course__availability-name">Dostępność</p>
+                            <p class="course__availability-tag">Wolne miejsca</p>
+                        </div>
+                        <div class="course__price">299&nbsp;zł</div>
+                        <form class="course__add" action="">
+                            <!-- <input class="form__group-input" type="number"> -->
+                            <input class="course__add-qty" type="number">
+                            <button class="btn btn--primary">
+                                Dodaj do koszyka
+                                <span class="btn__arrow">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 20L10.575 18.6L16.175 13H4V11H16.175L10.575 5.4L12 4L20 12L12 20Z"
+                                            fill="white"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <script src="../dist/js/main.min.js"></script>
+</body>
+
+</html>

@@ -211,3 +211,23 @@ input:focus {
 .no-scroll {
   overflow: hidden;
 }
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 42px 0 80px 0;
+
+  &__item {
+    color: var(--black-color);
+    line-height: 24px;
+    font-size: 16px;
+  }
+
+  &__link {
+    transition: color 0.3s ease-in;
+    &:hover {
+      color: var(--secondary-color);
+    }
+  }
+}
