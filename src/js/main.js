@@ -47,4 +47,22 @@ addEventListener("DOMContentLoaded", event => {
   if (navigationElement) {
     window.addEventListener("scroll", handleShadowNavigation);
   }
+
+  const addImageToCourseBtn = document.querySelector(".jsImagesAdd");
+  if (addImageToCourseBtn) {
+    const ImagesContainerElement = document.querySelector(".jsImagesCourse");
+    console.log(ImagesContainerElement);
+    addImageToCourseBtn.addEventListener("click", e => {
+      e.preventDefault();
+      const input = document.createElement("input");
+      input.classList.add("form__group-input");
+      input.type = "file";
+      input.name = "images";
+      input.accept = "image/*";
+      ImagesContainerElement.insertBefore(
+        input,
+        ImagesContainerElement.lastChild
+      );
+    });
+  }
 });

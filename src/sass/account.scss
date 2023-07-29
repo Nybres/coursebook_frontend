@@ -258,4 +258,8 @@
   .form__group {
     width: 100%;
   }
+
+  input + input {
+    margin-top: 12px;
+  }
 }
