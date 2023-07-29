@@ -34,4 +34,17 @@ addEventListener("DOMContentLoaded", event => {
       backdropDeActivate(overlay);
     });
   }
+
+  const handleShadowNavigation = () => {
+    if (window.scrollY > 148) {
+      navigationElement.classList.add("nav--shadow");
+    } else {
+      navigationElement.classList.remove("nav--shadow");
+    }
+  };
+
+  const navigationElement = document.querySelector(".nav");
+  if (navigationElement) {
+    window.addEventListener("scroll", handleShadowNavigation);
+  }
 });

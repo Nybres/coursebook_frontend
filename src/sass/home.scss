@@ -119,9 +119,15 @@
     font-weight: 400;
     padding: 12px 24px;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.2s ease-in-out;
 
     &.is-active {
-      background-color: #ff7700;
+      background-color: var(--secondary-color);
+      color: var(--white-color);
+    }
+
+    &:hover {
+      background-color: var(--secondary-color);
       color: var(--white-color);
     }
   }
@@ -206,6 +212,11 @@
     font-weight: 400;
     color: var(--primary-color);
     text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--secondary-color);
+    }
   }
 
   &__card {
