@@ -93,6 +93,9 @@
 }
 
 .chips {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   @include bodyXl();
   background-color: var(--light-grey-color);
   color: var(--black-color);
@@ -129,6 +132,7 @@
     background-color: var(--accent-color);
     padding: 62px 82px;
     border-radius: 20px;
+    min-height: 350px;
     max-width: 1100px;
     margin: 0 auto;
 
@@ -179,6 +183,51 @@
       p + p {
         margin-top: 16px;
       }
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 80px;
+  gap: 12px;
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 36px;
+    padding: 4px;
+    border-radius: 2px;
+    background: #f2f2f2;
+    color: var(--black-color);
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+    svg path {
+      transition: fill 0.3s ease-in-out;
+    }
+
+    &--active {
+      background-color: var(--secondary-color);
+      color: var(--white-color);
+    }
+
+    &--disabled {
+      pointer-events: none;
+    }
+
+    &:hover {
+      background-color: var(--primary-color);
+      color: var(--white-color);
+    }
+
+    &:hover svg path {
+      fill: var(--white-color);
     }
   }
 }
