@@ -149,10 +149,13 @@
 
   &__image {
     position: absolute;
-    right: -50%;
-    transform: translateX(-50%);
+    right: -120px;
+    // transform: translateX(-180px);
     top: 0;
     margin-top: 64px;
+    img {
+      border-radius: 20px;
+    }
   }
 
   &__content {

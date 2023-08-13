@@ -49,17 +49,56 @@
                         </div>
                         <div class="course__gallery">
                             <div class="course__gallery-left">
-                                <picture>
-                                    <img width="325" height="240" src="/dist/img/kursy/kurs_small_1.jpg" alt="">
-                                </picture>
-                                <picture>
-                                    <img width="325" height="240" src="/dist/img/kursy/kurs_small_1.jpg" alt="">
-                                </picture>
+                                <div id="thumbnail-carousel" class="splide courseThumbs">
+                                    <div class="splide__track">
+                                        <ul class="splide__list">
+                                            <li class="splide__slide">
+                                                <img src="./dist/img/kursy/11.jpg" alt="">
+                                            </li>
+                                            <li class="splide__slide">
+                                                <img src="./dist/img/kursy/22.jpg" alt="">
+                                            </li>
+                                            <li class="splide__slide">
+                                                <img src="./dist/img/kursy/33.jpg" alt="">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                             <div class="course__gallery-right">
-                                <picture>
-                                    <img width="484" height="506" src="/dist/img/kursy/kurs_big_1.jpg" alt="">
-                                </picture>
+                                <div id="image-carousel" class="splide courseBig">
+                                    <div class="splide__arrows">
+                                        <button class="splide__arrow splide__arrow--prev">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-chevron-left">
+                                                <polyline points="15 18 9 12 15 6"></polyline>
+                                            </svg>
+                                        </button>
+                                        <button class="splide__arrow splide__arrow--next">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-chevron-right">
+                                                <polyline points="9 18 15 12 9 6"></polyline>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="splide__track">
+                                        <ul class="splide__list">
+                                            <li class="splide__slide">
+                                                <img src="./dist/img/kursy/11.jpg" alt="">
+                                            </li>
+                                            <li class="splide__slide">
+                                                <img src="./dist/img/kursy/22.jpg" alt="">
+                                            </li>
+                                            <li class="splide__slide">
+                                                <img src="./dist/img/kursy/33.jpg" alt="">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="course__nav">
@@ -244,30 +283,48 @@
                     </h2>
                 </div>
                 <div class="relations__gallery">
-                    <picture>
-                        <img width="345" height="300" loading="lazy" src="../dist/img/kursy/kurs_small_1.jpg" alt="">
-                    </picture>
-                    <picture>
-                        <img width="345" height="300" loading="lazy" src="../dist/img/kursy/kurs_small_1.jpg" alt="">
-                    </picture>
-                    <picture>
-                        <img width="345" height="300" loading="lazy" src="../dist/img/kursy/kurs_small_1.jpg" alt="">
-                    </picture>
-                    <picture>
-                        <img width="345" height="300" loading="lazy" src="../dist/img/kursy/kurs_small_1.jpg" alt="">
-                    </picture>
-                    <picture>
-                        <img width="345" height="300" loading="lazy" src="../dist/img/kursy/kurs_small_1.jpg" alt="">
-                    </picture>
-                    <picture>
-                        <img width="345" height="300" loading="lazy" src="../dist/img/kursy/kurs_small_1.jpg" alt="">
-                    </picture>
-                    <picture>
-                        <img width="345" height="300" loading="lazy" src="../dist/img/kursy/kurs_small_1.jpg" alt="">
-                    </picture>
-                    <picture>
-                        <img width="345" height="300" loading="lazy" src="../dist/img/kursy/kurs_small_1.jpg" alt="">
-                    </picture>
+                    <div class="splide relationsImages">
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-chevron-left">
+                                    <polyline points="15 18 9 12 15 6"></polyline>
+                                </svg>
+                            </button>
+                            <button class="splide__arrow splide__arrow--next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="splide__track">
+                              <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img src="./dist/img/kursy/11.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./dist/img/kursy/22.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./dist/img/kursy/33.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./dist/img/kursy/11.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./dist/img/kursy/22.jpg" alt="">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="./dist/img/kursy/33.jpg" alt="">
+                                </li>
+                              </ul>
+                        </div>
+                      </div>
                 </div>
             </div>
         </section>
@@ -284,7 +341,8 @@
                             Prowadzący
                         </div>
                         <div class="testimonials__content-text">
-                            <p>
+                            <p>ttsaggsa asggsagsa gsgassga</p>
+                            <!-- <p>
                                 Z dumą dzieli się tajemnicami japońskiej kuchni i wprowadza uczestników w świat smaków,
                                 tradycji i historii sushi.
                             </p>
@@ -294,12 +352,12 @@
                                 satysfakcjonująca dla każdego. Z naszym prowadzącym szkolenie odkryjesz tajemnice sushi
                                 i zdobędziesz umiejętności, które będą inspirować Cię do tworzenia autentycznych i
                                 smacznych potraw sushi w domowym zaciszu.
-                            </p>
+                            </p> -->
                         </div>
                     </div>
                     <div class="testimonials__image">
                         <picture>
-                            <img loading="lazy" width="479" height="381" src="./dist/img/prowadzacy.jpg"
+                            <img loading="lazy" width="400" height="350" src="./dist/img/prowadzacy.jpg"
                                 alt="Wiktor Marecki">
                         </picture>
                     </div>

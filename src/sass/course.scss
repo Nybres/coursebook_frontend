@@ -103,10 +103,20 @@
     gap: 26px;
     margin-bottom: 80px;
     font-size: 0;
-    &-left {
-      display: flex;
-      flex-direction: column;
-      gap: 26px;
+
+    .splide {
+      &__arrows {
+        display: flex;
+        gap: 8px;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        z-index: 10;
+      }
+    }
+
+    img {
+      border-radius: 20px;
     }
   }
 
@@ -168,9 +178,31 @@
   }
 
   &__gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    .splide {
+      &__arrows {
+        display: flex;
+        gap: 8px;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        justify-content: space-between;
+        z-index: 10;
+      }
+
+      &__arrow {
+        position: absolute;
+        &--next {
+          right: 12px;
+        }
+        &--prev {
+            left: 12px;
+        }
+      }
+    }
+    img {
+      border-radius: 20px;
+    }
   }
 }
 
