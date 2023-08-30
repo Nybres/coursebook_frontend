@@ -195,6 +195,71 @@ input:focus {
       justify-content: flex-start;
     }
   }
+
+  &__images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 12px;
+    &-image {
+      position: relative;
+      font-size: 0px;
+      input[type="file"] {
+        display: none;
+      }
+      image {
+        border-radius: 20px;
+      }
+
+      &:first-of-type {
+        // border: 2px solid var(--primary-color);
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          border: 2px solid var(--primary-color);
+          pointer-events: none;
+        }
+      }
+    }
+
+    &-delete {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--primary-color);
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in;
+
+      &:hover {
+        background-color: var(--black-color);
+      }
+    }
+  }
+
+  &__add-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px 14px;
+    background-color: var(--light-grey-color);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+    &:hover {
+      background-color: #ececec;
+    }
+  }
 }
 
 .overlay {
