@@ -25,23 +25,34 @@
                         <form class="register__form" action="">
                             <div class="form__row">
                                 <div class="form__group">
-                                    <input placeholder="Imię" class="form__group-input" type="text">
+                                    <input placeholder="Imię" id="username" class="form__group-input form__group-input--error"
+                                        type="text">
+                                    <p class="form__group-paragraph--error">błąd błąd błąd błąd błąd błąd błąd błąd błąd</p>
                                 </div>
                                 <div class="form__group">
-                                    <input placeholder="Nazwisko" class="form__group-input" type="text">
+                                    <input placeholder="Nazwisko" id="users-surname" class="form__group-input" type="text">
+                                    <p class="form__group-paragraph--error">błąd błąd błąd błąd błąd błąd błąd błąd błąd</p>
                                 </div>
                             </div>
                             <div class="form__row">
                                 <div class="form__group">
-                                    <input placeholder="Adres e-mail" class="form__group-input" type="text">
+                                    <input placeholder="Adres e-mail" id="userEmail" class="form__group-input" type="text">
+                                    <p class="form__group-paragraph--error">błąd błąd błąd błąd błąd błąd błąd błąd błąd</p>
                                 </div>
                             </div>
                             <div class="form__row">
                                 <div class="form__group">
-                                    <input placeholder="Hasło" class="form__group-input" type="text">
+                                    <input placeholder="Utwórz hasło" id="userPassword" class="form__group-input" type="password">
+                                    <p class="form__group-paragraph--error">błąd błąd błąd błąd błąd błąd błąd błąd błąd</p>
                                 </div>
                             </div>
-                            <button title="Zarejestruj się" href="#" class="btn btn--primary">
+                            <div class="form__row">
+                                <div class="form__group">
+                                    <input placeholder="Powtórz hasło" id="userPassword2" class="form__group-input" type="password">
+                                    <p class="form__group-paragraph--error">błąd błąd błąd błąd błąd błąd błąd błąd błąd</p>
+                                </div>
+                            </div>
+                            <button title="Zarejestruj się" href="#" class="btn btn--primary userRegisterBtn">
                                 Zarejestruj się
                                 <span class="btn__arrow">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -53,13 +64,13 @@
                             </button>
                         </form>
                     </div>
-
                     <a href="./login.html" class="login__return">Powrót do logowania</a>
                 </div>
             </div>
         </section>
     </main>
     <!-- @include 'footer.kit' -->
+    <script src="../dist/js/register-user.min.js"></script>
     <script src="../dist/js/main.min.js"></script>
 </body>
 
