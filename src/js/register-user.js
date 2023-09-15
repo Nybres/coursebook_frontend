@@ -1,4 +1,3 @@
-
 addEventListener('DOMContentLoaded', (event) => {
 	const userName = document.querySelector('#username')
 	const userSurname = document.querySelector('#users-surname')
@@ -28,7 +27,7 @@ addEventListener('DOMContentLoaded', (event) => {
 
 	const checkEmail = (email) => {
 		const regularExpression =
-			/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+			/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9żźćńółęąśŻŹĆĄŚĘŁÓŃ]+\.)+[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ]{2,}))$/
 
 		if (regularExpression.test(email.value)) {
 			clearError(email)
@@ -58,7 +57,7 @@ addEventListener('DOMContentLoaded', (event) => {
 	}
 
 	const checkPasswords = (input1, input2) => {
-		const regularExpression = /^(?=.*[A-Z])(?=.*\d).{8,}$/
+		const regularExpression = /^(?=.*[A-ZĄĆĘŁŃÓŚŹŻ])(?=.*\d)[\x20-\x7EĄĆĘŁŃÓŚŹŻa-zA-Z0-9ĄĆĘŁŃÓŚŹŻ]{8,}$/
 
 
 
